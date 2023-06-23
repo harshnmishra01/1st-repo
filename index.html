@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
       * {
         animation: fadeIn 1s ease-out;
       }
+
       @keyframes fadeIn {
         0% {
           opacity: 0;
@@ -19,6 +21,7 @@
       img {
         animation: rotate 2s linear infinite;
       }
+
       @keyframes rotate {
         from {
           transform: rotate(0deg);
@@ -27,10 +30,11 @@
           transform: rotate(360deg);
         }
       }
-      h1, h4 {
+
+      h1,
+      h4 {
         animation: colorChange 2s ease-in-out infinite;
       }
-
 
       @keyframes colorChange {
         0% {
@@ -43,45 +47,97 @@
           color: white;
         }
       }
+      
+      /* Additional Styles */
+      
+      body {
+        background-color: #f8f9fa;
+      }
+
+      table {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-top: 3px solid #007bff;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      ul li a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      table {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      table td {
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
-    <table cellspacing='25'>
-      <td><img src="dp.png" alt="Profile Picture"/></td>
-        <td><h1>Harsh Mishra</h1>
-        <p>
-          <i><strong>ETHICAL HACKER</strong></i>
-        </p>
-        <p>172.0.0.1</p>
-        <p>VIRTUAL</p>
-       </td>
+    <div class="container">
+      <table>
+        <tr>
+          <td><img src="dp.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 150px;"></td>
+          <td>
+            <h1>Harsh Mishra</h1>
+            <p>
+              <i><strong>ETHICAL HACKER</strong></i>
+            </p>
+            <p>172.0.0.1</p>
+            <p>VIRTUAL</p>
+          </td>
+        </tr>
       </table>
-        <hr size="3" noshade />
-        <h4>About</h4>
-        <ul>
-         
-          <li><a href="p.html">Parents</a></li>
-          <li>Siblings</li>
-            <ul>
-                <li><a href="https://www.instagram.com/m_ayush_5/">Ayush Mishra</a></li>
-            </ul>
-           
-         
- 
-          <li>Hobbies</li>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
-                 <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
-            </ul>
-        </ul>
-        <h4>Interests</h4>
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Business">Business</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Computer_network">Cyber Networks</a></li>
-        </ul>
-
-        <h4>Skillset</h4>
-        <table>
+      <hr>
+      <h4>About</h4>
+      <ul>
+        <li><a href="p.html">Parents</a></li>
+        <li>Siblings
+          <ul>
+            <li><a href="https://www.instagram.com/m_ayush_5/">Ayush Mishra</a></li>
+          </ul>
+        </li>
+        <li>Hobbies
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h4>Interests</h4>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Business">Business</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Computer_network">Cyber Networks</a></li>
+      </ul>
+      <h4>Skillset</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>C</td>
             <td>⭐⭐⭐</td>
@@ -90,16 +146,18 @@
             <td>C++</td>
             <td>⭐⭐⭐</td>
           </tr>
-             <tr>
+          <tr>
             <td>HTML</td>
             <td>⭐⭐⭐</td>
           </tr>
-            <tr>
+          <tr>
             <td>CSS</td>
             <td>⭐⭐⭐</td>
           </tr>
-        </table>
+        </tbody>
+      </table>
+    </div>
 
-
-    </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
