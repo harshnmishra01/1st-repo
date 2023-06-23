@@ -32,31 +32,48 @@
         transform: scale(1.2);
       }
 
-      h1,
-      h4 {
-        animation: colorChange 4s linear infinite;
+      h1 {
+        animation: colorChange 6s infinite;
       }
 
       @keyframes colorChange {
         0% {
+          color: black;
+        }
+        10% {
           color: #8B4513; /* Dark brown */
         }
-        25% {
-          color: #D2691E; /* Light brown */
+        20% {
+          color: #D2B48C; /* Light brown */
         }
-        50% {
-          color: red;
-        }
-        75% {
+        30% {
           color: blue;
         }
+        40% {
+          color: brown;
+        }
+        50% {
+          color: black;
+        }
+        60% {
+          color: brown;
+        }
+        70% {
+          color: blue;
+        }
+        80% {
+          color: #D2B48C; /* Light brown */
+        }
+        90% {
+          color: #8B4513; /* Dark brown */
+        }
         100% {
-          color: #000000; /* Black */
+          color: black;
         }
       }
-      
+
       /* Additional Styles */
-      
+
       table {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -127,7 +144,7 @@
         <li>Hobbies
           <ul>
             <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Chess">
+            <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
           </ul>
         </li>
       </ul>
