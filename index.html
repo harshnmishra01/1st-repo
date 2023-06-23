@@ -34,18 +34,24 @@
 
       h1,
       h4 {
-        animation: colorChange 2s ease-in-out infinite;
+        animation: colorChange 4s linear infinite;
       }
 
       @keyframes colorChange {
         0% {
-          color: black;
-        }
-        50% {
           color: #8B4513; /* Dark brown */
         }
+        25% {
+          color: #D2691E; /* Light brown */
+        }
+        50% {
+          color: red;
+        }
+        75% {
+          color: blue;
+        }
         100% {
-          color: black;
+          color: #000000; /* Black */
         }
       }
       
@@ -121,7 +127,7 @@
         <li>Hobbies
           <ul>
             <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Chess">
           </ul>
         </li>
       </ul>
