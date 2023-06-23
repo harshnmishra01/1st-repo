@@ -18,17 +18,18 @@
         }
       }
 
-      img {
-        animation: rotate 2s linear infinite;
+      body {
+        background-color: lavender;
       }
 
-      @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
+      .zoomable-img {
+        transition: transform 0.3s;
+        width: 200px;
+        height: auto;
+      }
+
+      .zoomable-img:hover {
+        transform: scale(1.2);
       }
 
       h1,
@@ -38,22 +39,18 @@
 
       @keyframes colorChange {
         0% {
-          color: white;
+          color: black;
         }
         50% {
-          color: yellow;
+          color: #8B4513; /* Dark brown */
         }
         100% {
-          color: white;
+          color: black;
         }
       }
       
       /* Additional Styles */
       
-      body {
-        background-color: #f8f9fa;
-      }
-
       table {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -97,7 +94,11 @@
     <div class="container">
       <table>
         <tr>
-          <td><img src="dp.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 150px;"></td>
+          <td>
+            <div class="zoomable-img">
+              <img src="dp.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 250px;">
+            </div>
+          </td>
           <td>
             <h1>Harsh Mishra</h1>
             <p>
