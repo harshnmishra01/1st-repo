@@ -1,195 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>MY WEBSITE</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-      * {
-        animation: fadeIn 5s ease-out;
-      }
+<head>
+  <meta charset="UTF-8">
+  <title>MY WEBSITE</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    * {
+      animation: fadeIn 5s ease-out;
+    }
 
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
-
-      body {
-        background-color: lavender;
+      100% {
+        opacity: 1;
       }
+    }
 
-      .zoomable-img {
-        transition: transform 0.3s;
-        width: 200px;
-        height: auto;
+    body {
+      background-color: lavender;
+    }
+
+    .zoomable-img {
+      transition: transform 0.3s;
+      width: 200px;
+      height: auto;
+    }
+
+    .zoomable-img:hover {
+      transform: scale(1.2);
+    }
+
+    h1 {
+      color: black; /* Set initial color */
+    }
+
+    .color-change-animation {
+      animation: colorChange 10s infinite;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: black;
       }
-
-      .zoomable-img:hover {
-        transform: scale(1.2);
+      10% {
+        color: #8B4513; 
       }
-
-      h1 {
-        animation: colorChange 10s infinite;
+      20% {
+        color: #435B66;
       }
-
-      @keyframes colorChange {
-        0% {
-          color: black;
-        }
-        10% {
-          color: #8B4513; 
-        }
-        20% {
-          color: #435B66;
-        }
-        30% {
-          color: blue;
-        }
-        40% {
-          color: #8B4513;
-        }
-        50% {
-          color: black;
-        }
-        60% {
-          color: #8B4513;
-        }
-        70% {
-          color: blue;
-        }
-        80% {
-          color: #435B66; 
-        }
-        90% {
-          color: #8B4513; 
-        }
-        100% {
-          color: black;
-        }
+      30% {
+        color: blue;
       }
-
-      /* Additional Styles */
-
-      table {
-        margin-top: 25px;
-        margin-bottom: 25px;
+      40% {
+        color: #8B4513;
       }
-
-      td {
-        vertical-align: middle;
+      50% {
+        color: black;
       }
-
-      hr {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border-top: 3px solid #007bff;
+      60% {
+        color: #8B4513;
       }
-
-      ul {
-        list-style-type: none;
-        padding-left: 0;
+      70% {
+        color: blue;
       }
-
-      ul li {
-        margin-bottom: 10px;
+      80% {
+        color: #435B66; 
       }
-
-      ul li a {
-        color: #007bff;
-        text-decoration: none;
+      90% {
+        color: #8B4513; 
       }
-
-      table {
-        width: 200px;
-        margin-bottom: 30px;
+      100% {
+        color: black;
       }
+    }
 
-      table td {
-        padding: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <table>
+    /* Additional Styles */
+
+    table {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    hr {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-top: 3px solid #007bff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    table {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+
+    table td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <div class="zoomable-img">
+            <img src="dp.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 250px;">
+          </div>
+        </td>
+        <td>
+          <h1 class="color-change-animation">Harsh Mishra</h1>
+          <p>
+            <i><strong>not so ETHICAL hacker</strong></i>
+          </p>
+          <p>172.0.0.1</p>
+          <p>Lavender is love!</p>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <h4>About</h4>
+    <ul>
+      <li><a href="p.html">Parents</a></li>
+      <li>Siblings
+        <ul>
+          <li><a href="https://www.instagram.com/m_ayush_5/">Ayush Mishra</a></li>
+        </ul>
+      </li>
+      <li>Hobbies
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Interests</h4>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Business">Business</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Computer_network">Cyber Networks</a></li>
+    </ul>
+    <h4>Skillset</h4>
+    <table class="table">
+      <thead>
         <tr>
-          <td>
-            <div class="zoomable-img">
-              <img src="dp.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 250px;">
-            </div>
-          </td>
-          <td>
-            <h1>Harsh Mishra</h1>
-            <p>
-              <i><strong>not so ETHICAL hacker</strong></i>
-            </p>
-            <p>172.0.0.1</p>
-            <p>Lavendar is love!</p>
-          </td>
+          <th>Skill</th>
+          <th>Rating</th>
         </tr>
-      </table>
-      <hr>
-      <h4>About</h4>
-      <ul>
-        <li><a href="p.html">Parents</a></li>
-        <li>Siblings
-          <ul>
-            <li><a href="https://www.instagram.com/m_ayush_5/">Ayush Mishra</a></li>
-          </ul>
-        </li>
-        <li>Hobbies
-          <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Cricket">Cricket</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></li>
-          </ul>
-        </li>
-      </ul>
-      <h4>Interests</h4>
-      <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Business">Business</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Computer_network">Cyber Networks</a></li>
-      </ul>
-      <h4>Skillset</h4>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Skill</th>
-            <th>Rating</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>C</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>C++</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Linux</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      </thead>
+      <tbody>
+        <tr>
+          <td>C</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Linux</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const h1Element = document.querySelector("h1.color-change-animation");
+      h1Element.addEventListener("animationend", function() {
+        h1Element.classList.remove("color-change-animation");
+      });
+    });
+  </script>
+</body>
 </html>
